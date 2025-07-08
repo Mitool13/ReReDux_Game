@@ -1,9 +1,23 @@
 
+import PropTypes  from 'prop-types';
+import React from 'react';
+import { connect } from 'react-redux';
 
-function App() {
-  return ( <div className="App">
-    <h1>We will create an awesome game with React, Redux, and SVG</h1>
-  </div>);
+///////////
+class App extends React.Component
+{
+  render(){
+    return(<div className='App'>
+      <h1>{this.props.message}</h1>
+    </div>);
+  }
 }
+App.propTypes = {
+  message: PropTypes.string.isRequired,
+};
 
-export default App;
+const mapStateToProps = (state) =>({
+  message: state.message,
+})
+
+export default connect(mapStateToProps)(App);

@@ -1,0 +1,15 @@
+{
+    "workbench.settings.useSplitJSON": true,
+    "editor.codeActionsOnSave":
+    {
+        
+        "source.fixAll.biome": "explicit"
+    }
+    ,"powermode.enabled": true,
+    "powermode.combo.counterEnabled": "hide",
+    "powermode.explosions.enabled": true,
+    "powermode.explosions.size": 8,
+    "powermode.shake.intensity": 0,
+    "powermode.combo.timerEnabled": "hide"
+
+}
